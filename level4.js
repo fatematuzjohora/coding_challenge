@@ -52,3 +52,14 @@ function factorize(num) {
    
    let answer = factorize(5);
    console.log(answer);
+
+  //  Truncate a String
+  function truncateString(str, num) {
+    let output = str.substring(0, num);
+    if (output.length < str.length){
+      output += '...'
+    }
+    return output
+  }
+let res = truncateString("fatema is a programmer", 10);
+console.log(res);
