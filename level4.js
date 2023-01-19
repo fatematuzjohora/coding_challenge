@@ -1,3 +1,5 @@
+// Sum All Numbers in a Range
+
 function smallAll(arr){
     let first = arr[0];
     let last = arr[1];
@@ -97,3 +99,21 @@ function chunkyArray(arr, size){
 }
 let ans =chunkyArray(["a", "b", "c", "d"], 2);
 console.log(ans);
+
+// Seek and Destroy
+function destroyer(arr){
+  let output = [];
+  let input = arguments[0];
+  let destroy = [];
+  for (let i = 1; i < arguments.length; i++){
+    destroy.push(arguments[i])
+  }
+  for(let i = 0; i < input.length; i++){
+    if(destroy.includes(input[i]) === false){
+      output.push(input[i]);
+    }
+  }
+  return output
+}
+ let add = destroyer([1, 2, 3, 4, 5, 6], 4, 5, 6);
+ console.log(add);
