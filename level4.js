@@ -117,3 +117,21 @@ function destroyer(arr){
 }
  let add = destroyer([1, 2, 3, 4, 5, 6], 4, 5, 6);
  console.log(add);
+
+//   way of altering English Words
+function translate(str){
+  let firstLetter = str[0];
+  let vowel = "aeiou"
+  if(vowel.includes(firstLetter)){
+    return str + way;
+  }
+  let i = 0;
+  let cluser = "";
+  while(vowel.includes(str[i]) && i < str.length){
+    cluser += str[i]
+    i++;
+  }
+  return str.substring(i) + cluser + "ay";
+}
+let reverse = translate('fatema');
+console.log(reverse);
