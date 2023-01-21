@@ -37,3 +37,22 @@ return sum;
 }
 let arsum = simpleArraySum([1, 2, 3, 4, 10, 11])
 console.log(arsum);
+
+// Arrays
+function getSecondLargest(nums) {
+    let largest = nums[0]
+    for(let i = 1; i < nums.length; i++){
+        if(nums[i] > largest){
+            largest = nums[i];
+        }
+    }
+     let secondLargest = nums[0]
+    for(let i = 1; i < nums.length; i++){
+        if(nums[i] < largest){
+            secondLargest = nums[i];
+        }
+    }
+    return secondLargest;
+}
+let getsecond =getSecondLargest([6, 7, 4, 9, 80])
+console.log(getsecond);
