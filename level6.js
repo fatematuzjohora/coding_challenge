@@ -94,7 +94,7 @@ function sumOf3or5(num) {
 let multiple = sumOf3or5(5);
 console.log(multiple);
 
-// Sherlock and Array
+// 6. Sherlock and Array
 function balancedSums(arr) {
     if (arr.length === 1) return "YES";
  let leftSum, rightSum;
@@ -110,3 +110,18 @@ function balancedSums(arr) {
 }
 let sherlock =balancedSums([1, 1, 4, 1, 1]);
 console.log(sherlock);
+
+// 
+function getCount(objects) {
+    let count = 0;
+  for( let i = 0; i < objects.length; i++){
+      if(objects[i].x == objects[i].y){
+          count++
+      }
+  }
+      
+  
+  return count;
+}
+let number = getCount([2, 3]);
+console.log(number);
