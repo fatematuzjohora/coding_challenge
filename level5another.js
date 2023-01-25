@@ -290,4 +290,5 @@ function hurdleRace(k, height) {
       return 0;
     }
   }
-;
+  let y = hurdleRace(5, 2);
+  console.log(y);
