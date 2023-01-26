@@ -264,6 +264,9 @@ function bonAppetit(bill, k, b) {
   }
 };
 
+let b = bonAppetit(4, 5, 76);
+console.log(b);
+
 // Cats and a Mouse (HackerRank):
 function catAndMouse(x, y, z) {
   let diffx = Math.abs(z-x);
@@ -292,3 +295,4 @@ function hurdleRace(k, height) {
   }
   let y = hurdleRace(5, 2);
   console.log(y);
+
