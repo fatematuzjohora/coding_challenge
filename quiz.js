@@ -1,7 +1,7 @@
-// let foo = 22;
-// foo = "hello";
-// foo = true;
-let foo;
+let foo = 22;
+foo = "hello";
+foo = true;
+let food;
 console.log(foo);
 
 let test = 71 - 1_000_000;
