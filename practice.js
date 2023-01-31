@@ -30,6 +30,8 @@ function gradingStudents(grades) {
     }
     return gradesFinal;
 }
+let r = gradingStudents(20);
+console.log(r);
 
 // sales by match hackerrank solution javascript
 function sockMerchant(n, ar) {
