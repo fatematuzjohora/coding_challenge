@@ -285,16 +285,7 @@ function catAndMouse(x, y, z) {
 };
 
 // The Hurdle Race (HackerRank):
-function hurdleRace(k, height) {
-  let x = height.sort((a, b) => a - b).pop();
-    if((x - k) > 0){
-      return x - k;
-    } else {
-      return 0;
-    }
-  }
-  let y = hurdleRace(5, 2);
-  console.log(y);
+
 
   
 
