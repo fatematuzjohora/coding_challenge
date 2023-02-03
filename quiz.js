@@ -48,3 +48,21 @@ function hurdleRace(k, height) {
     }
     let y = hurdleRace(5, 2);
     console.log(y);
+
+    function extraLongFactorials(n) {
+      let calculator = BigInt(1);
+      for (let i = 1; i <= n; ++i) calculator *= BigInt(i);
+      console.log(calculator.toString());
+    }
+    
+
+    function findDigits(n) {
+      let num = "", count = 0;
+      num = n.toString();
+      for (let i = 0; i < num.length; i++) {
+          if (num[i] != 0 && n % num[i] === 0) {
+              count += 1;
+          }
+      }
+      return count;
+  }
